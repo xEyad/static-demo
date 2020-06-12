@@ -1,0 +1,26 @@
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .data{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .evaluation{
+    .result{
+      margin-inline-end: 10px;
+    }
+  }
+
+}
+.good{
+  color: #18c809;
+}
+.bad{
+  color: #c80929;
+}

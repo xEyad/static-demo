@@ -1,0 +1,24 @@
+<nb-card class="shadow"size="tiny">
+  <nb-card-header>
+    Finances
+  </nb-card-header>
+  <nb-card-body>
+    <div class="wrapper ">
+    <div class="meter">
+      <div class="data">
+        <span>Income</span>
+        <span>350$</span>
+      </div>
+      <nb-progress-bar [value]="50" status="info"></nb-progress-bar>
+    </div>
+
+    <div class="meter">
+      <div class="data">
+        <span>Expenses</span>
+        <span>150$</span>
+      </div>
+      <nb-progress-bar [value]="30"  status="warning"></nb-progress-bar>
+    </div>
+  </div>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,23 @@
+<nb-card class="shadow rounded">
+  <nb-card-body>
+    <div class="wrapper">
+     <div class="top">
+       <div class="data">
+        <div class="label">{{label}}</div>
+        <div class="value">{{value}}</div>
+       </div>
+       <ng-content select="i"></ng-content>
+     </div>
+     <span class="evaluation">
+       <span class="result" [ngClass]="{'good': isIncreasing,'bad':!isIncreasing}">
+
+        <i class="fas fa-arrow-up"    *ngIf="isIncreasing"></i>
+        <i class="fas fa-arrow-down" *ngIf="!isIncreasing"></i>
+        {{evaluation}}
+       </span>
+
+      <span>since {{lastEvaluationDate}}</span>
+      </span>
+    </div>
+  </nb-card-body>
+</nb-card>
